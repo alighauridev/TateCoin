@@ -61,7 +61,7 @@ body::before {
   content: "";
   position: absolute;
   /* top: 0px; */
-  background: url(http://localhost:3000/static/media/bac.3f122b05fe7af9d7f75f.webp);
+  background: url(../assests/bg/bac.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;

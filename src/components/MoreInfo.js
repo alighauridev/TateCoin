@@ -3,7 +3,12 @@ import "../scss/moreinfo.scss";
 import img1 from "../assests/fair-icon.png";
 import img2 from "../assests/secure-icon.png";
 import img3 from "../assests/open-icon.png";
+import thumb1 from "../assests/open-icon.png";
 import ReactPlayer from "react-player";
+import vid1 from "../assests/videos/TATE.mp4"
+import vid2 from "../assests/videos/TATE_2.mp4"
+import vid3 from "../assests/videos/TATE_3_2.mp4"
+import vid4 from "../assests/videos/TATE_4.mp4"
 import VIDEO_PATH from "../assests/bg/file.mp4";
 const MoreInfo = () => {
   const playerRef = useRef(null);
@@ -19,16 +24,72 @@ const MoreInfo = () => {
           </div>
           <div className="content">
             <div className="box-wrapper" data-aos="fade-up">
-              <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} />
+              <ReactPlayer ref={playerRef} url={vid1} poster controls={true} config={{
+                file: {
+                  attributes: {
+                    poster: "https://i.gyazo.com/1f7f9732568ce05fa1f20380d66fe09f.png" // Specify the corresponding thumbnail for this video
+                  }
+                },
+                thumbnails: [
+                  {
+                    url: "https://i.gyazo.com/1f7f9732568ce05fa1f20380d66fe09f.png", // Thumbnail for the first video
+                    width: 320,
+                    height: 180
+                  },
+
+                ]
+              }} />
             </div>
             <div className="box-wrapper" data-aos="fade-up">
-              <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} />
+              <ReactPlayer ref={playerRef} url={vid2} poster controls={true} config={{
+                file: {
+                  attributes: {
+                    poster: "https://i.gyazo.com/94f653a6084e0f4642818bbb4fe951c6.png" // Specify the corresponding thumbnail for this video
+                  }
+                },
+                thumbnails: [
+                  {
+                    url: "https://i.gyazo.com/94f653a6084e0f4642818bbb4fe951c6.png", // Thumbnail for the first video
+                    width: 320,
+                    height: 180
+                  },
+
+                ]
+              }} />
             </div>
             <div className="box-wrapper" data-aos="fade-up">
-              <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} />
+              <ReactPlayer ref={playerRef} url={vid3} poster controls={true} config={{
+                file: {
+                  attributes: {
+                    poster: "https://i.gyazo.com/b51d19d8e205c7ba30891fe392e08c0a.png" // Specify the corresponding thumbnail for this video
+                  }
+                },
+                thumbnails: [
+                  {
+                    url: "https://i.gyazo.com/b51d19d8e205c7ba30891fe392e08c0a.png", // Thumbnail for the first video
+                    width: 320,
+                    height: 280
+                  },
+
+                ]
+              }} />
             </div>
             <div className="box-wrapper" data-aos="fade-up">
-              <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} />
+              <ReactPlayer ref={playerRef} url={vid3} poster controls={true} config={{
+                file: {
+                  attributes: {
+                    poster: "https://i.gyazo.com/61f13b32dea93d5ef12d6ddb0c8ec383.png" // Specify the corresponding thumbnail for this video
+                  }
+                },
+                thumbnails: [
+                  {
+                    url: "https://i.gyazo.com/61f13b32dea93d5ef12d6ddb0c8ec383.png", // Thumbnail for the first video
+                    width: 320,
+                    height: 180
+                  },
+
+                ]
+              }} />
             </div>
           </div>
 
@@ -37,7 +98,7 @@ const MoreInfo = () => {
             <div className="tokens">
               <div className="first">
                 <div className="box">
-                  <p style={{flexDirection:'column',display:'flex',alignItems:'start',justifyContent:'center',rowGap:'10px'}}>
+                  <p style={{ flexDirection: 'column', display: 'flex', alignItems: 'start', justifyContent: 'center', rowGap: '10px' }}>
                     <span>333,000,000,000,000</span>
                     Token supply
                   </p>

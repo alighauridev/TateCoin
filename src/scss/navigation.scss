@@ -13,8 +13,6 @@ header {
   .outer {
     position: relative;
 
-
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -51,21 +49,18 @@ header {
             gap: 5px;
 
             span {
-              color: #FFFFFF;
+              color: #ffffff;
               display: flex;
               align-items: center;
               gap: 2px;
               height: 100%;
               font-size: 25px;
-              font-family: 'open';
-
+              font-family: "open";
 
               b {
-                color: #00EC46;
-              font-family: 'font-2';
-              font-size: 25px;
-
-
+                color: #00ec46;
+                font-family: "font-2";
+                font-size: 25px;
               }
             }
           }
@@ -85,9 +80,9 @@ header {
             gap: 30px;
             margin-right: 20px;
             @include md {
-              margin-right:0px ;
+              margin-right: 0px;
             }
-            >li {
+            > li {
               margin: 0.5rem 0px !important;
               display: flex;
               position: relative;
@@ -102,7 +97,7 @@ header {
                 width: 100%;
               }
 
-              >a {
+              > a {
                 transition: 0.3s all;
                 text-transform: capitalize;
                 font-family: "open";
@@ -110,7 +105,6 @@ header {
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: 300;
-
               }
             }
 
@@ -129,8 +123,8 @@ header {
                 cursor: pointer;
                 padding: 10px;
                 border-radius: 50px;
-                background: #FF0000;
-                border: 1px solid #FFFFFF;
+                background: #ff0000;
+                border: 1px solid #ffffff;
                 justify-content: center;
                 display: flex;
                 justify-content: center;
@@ -167,16 +161,16 @@ header {
             color: #ffffff;
             border: 0px;
             cursor: pointer;
-            padding: 10px;
+            padding: 10px 10px 8px 10px;
             border-radius: 50px;
-            background: #FF0000;
-            border: 1px solid #FFFFFF;
+            background: #ff0000;
+            border: 1px solid #ffffff;
             justify-content: center;
             display: flex;
             justify-content: center;
-
+            font-family: "open";
+            margin: 0;
             @include md {
-
               display: none;
             }
 
@@ -189,7 +183,6 @@ header {
               display: initial;
               font-size: 21px;
               font-family: "font-2";
-
             }
           }
 
@@ -245,7 +238,7 @@ header {
 
             .bars {
               img {
-              width: 50% !important;
+                width: 50% !important;
               }
             }
           }
@@ -273,9 +266,9 @@ header {
     right: 1.7%;
   }
 
-  >i {
+  > i {
     width: 50px;
-    background: #FF0000 !important;
+    background: #ff0000 !important;
     height: 50px;
     display: grid;
     place-content: center;
@@ -301,7 +294,7 @@ header {
   header {
     .nav__grid {
       .nav__btns {
-        >i {
+        > i {
           display: none;
         }
       }
@@ -313,8 +306,6 @@ header {
   header {
     .nav__grid {
       grid-template-columns: 1fr 1.5fr !important;
-
-
 
       nav {
         position: fixed;
@@ -334,9 +325,8 @@ header {
         left: 0px;
         transform: translateX(-310px);
         z-index: 1111;
-@include mobile {
- 
-}
+        @include mobile {
+        }
         ul {
           justify-content: start !important;
           transition: 0.3s all ease-out;
@@ -346,7 +336,6 @@ header {
           align-items: flex-start !important;
           padding: 22px 20px;
           font-size: 1.4rem;
-
 
           li {
             margin-right: unset;
@@ -360,7 +349,7 @@ header {
       }
 
       .nav__btns {
-        >i {
+        > i {
           width: 100%;
           /* background: #ffb32c !important; */
           height: 50px;
@@ -374,8 +363,6 @@ header {
           align-items: center;
           color: #363434;
           z-index: 11111;
-
-
         }
       }
     }

@@ -27,11 +27,11 @@
       row-gap: 25px;
 
       h1 {
-        color: #00EC45;
+        color: #00ec45;
         font-size: clamp(10%, 11vw, 65px);
         width: 100%;
         text-align: center;
-        font-family: 'font-2';
+        font-family: "font-2";
         letter-spacing: -2px;
         word-spacing: -25px;
         @include md {
@@ -50,15 +50,14 @@
           width: 100%;
           font-weight: 900;
           line-height: 40px;
-@include md {
-  font-size: 18px;
-}
+          @include md {
+            font-size: 18px;
+          }
           span {
-            color: #00EC45;
+            color: #00ec45;
             font-family: "font-2";
             font-weight: 900;
             margin-right: 20px;
-
           }
         }
       }
@@ -101,8 +100,9 @@
         row-gap: 20px;
 
         p {
-          font-family: "open";
-          font-size: 20px;
+          font-family: "font-2";
+          font-size: 32px;
+
           font-weight: 300;
           text-transform: none;
           color: white;
@@ -110,12 +110,11 @@
 
           span {
             color: #00ec46;
-            font-size: 20px;
+            font-size: 32px;
             text-align: center;
-
+            font-family: "font-2";
           }
         }
-
       }
 
       .box-right {
@@ -127,29 +126,32 @@
         row-gap: 20px;
 
         p {
-          font-family: "open";
-          font-size: 20px;
+          font-size: 32px;
           font-weight: 300;
           text-transform: none;
           color: white;
           text-align: center;
-
+          font-family: "font-2";
 
           span {
             color: #00ec46;
-            font-size: 20px;
-            font-family: 'font-2';
+            font-size: 32px;
+            text-align: center;
+            margin-right: 4px;
+            font-family: "font-2";
           }
         }
 
         p {
           span {
             color: #00ec46;
-            font-size: 20px;
+            font-size: 32px;
+            font-family: "font-2";
           }
 
           b {
-            font-size: 25px;
+            font-size: 32px;
+            font-family: "font-2";
           }
         }
       }
@@ -178,23 +180,20 @@
         justify-content: center;
 
         span {
-          color: #FFFFFF;
+          color: #ffffff;
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 2px;
           height: 100%;
           font-size: 50px;
-          font-family: 'open';
-
+          font-family: "open";
 
           b {
-            color: #00EC46;
-            font-family: 'font-2';
+            color: #00ec46;
+            font-family: "font-2";
             font-size: 25px;
             font-size: 50px;
-
-
           }
         }
 
@@ -216,8 +215,7 @@
           margin-top: 40px;
 
           a {
-
-            font-family: 'font-2';
+            font-family: "font-2";
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
             font-size: 16px;
             font-weight: 400;
@@ -225,9 +223,9 @@
             color: #ffffff;
             border: 0px;
             cursor: pointer;
-            padding: 10px;
+            padding: 10px 10px 7px 10px;
             border-radius: 50px;
-            border: 1px solid #FFFFFF;
+            border: 1px solid #ffffff;
             justify-content: center;
             display: flex;
             justify-content: center;
@@ -244,27 +242,29 @@
         row-gap: 10px;
         margin-top: 40px;
 
-  .address{
-    h3 {
-      color: #00ec46;
-      font-size: 25px;
-      text-align: center;
-      font-family: 'open';
-
-    }
-  }
+        .address {
+          h3 {
+            color: #00ec46;
+            font-size: 25px;
+            text-align: center;
+            font-family: "open";
+          }
+        }
 
         h4 {
-          font-family: 'light-font-2';
+          font-family: "light-font-2";
           font-size: 20px;
           font-weight: 600;
           text-transform: none;
           color: white;
           /* max-width: 200px; */
-          word-wrap: break-word;
+          /* word-wrap: break-word; */
           display: flex;
           text-decoration: underline !important;
-
+          display: inline;
+          width: 100%;
+          word-break: break-all;
+          text-align: center;
         }
       }
     }

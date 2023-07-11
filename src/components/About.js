@@ -25,7 +25,7 @@ const About = () => {
                 <span>0</span>/<span>0</span>
               </p>
               <p>
-                <span>LP</span>
+                <span>LP &nbsp;</span>
                 Locked
               </p>
             </div>
@@ -66,9 +66,9 @@ const About = () => {
             </div>
             <div className="content-address">
               <h3>$TATE Smart contract address :</h3>
-           <div className="address">
-           <h4>0xa589d8868607b8d79eE4288ce192796051263b64</h4>
-           </div>
+              <div className="address">
+                <h4>0xa589d8868607b8d79eE4288ce192796051263b64</h4>
+              </div>
             </div>
           </div>
         </div>
