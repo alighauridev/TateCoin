@@ -75,7 +75,7 @@ const MoreInfo = () => {
               }} />
             </div>
             <div className="box-wrapper" data-aos="fade-up">
-              <ReactPlayer ref={playerRef} url={vid3} poster controls={true} config={{
+              <ReactPlayer ref={playerRef} url={vid4} poster controls={true} config={{
                 file: {
                   attributes: {
                     poster: "https://i.gyazo.com/61f13b32dea93d5ef12d6ddb0c8ec383.png" // Specify the corresponding thumbnail for this video
