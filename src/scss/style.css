@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fredoka+One&family=Inter:wght@300;400;500;600;700;800;900&family=Jost:wght@200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Merienda:wght@400;600;800&family=Oswald:wght@200;300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Josefin+Sans:wght@300;400;500;600;700&family=Kanit:wght@400;500;600&family=Koulen&family=Libre+Bodoni:wght@400;500;600;700&family=Luckiest+Guy&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Spectral:wght@200;300;400;500;600;700;800&family=Tapestry&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@font-face {
+  font-family: "font-1";
+  src: url("./font/Patrick_Hand/PatrickHand-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-2";
+  src: url("./font/mnicmp/mnicmp-Bold.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "light-font-2";
+  src: url("./font/mnicmp/mnicmp-Light.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "open";
+  src: url("../scss/font/mnicmp/mnicmp.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "raboto";
+  src: url("./font/Roboto/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("./font/Roboto/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("./font/Poppins/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", system-ui;
+  text-decoration: none !important;
+}
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  /* top: 0px; */
+  background: url(http://localhost:3000/static/media/bac.3f122b05fe7af9d7f75f.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  background-position: center bottom;
+  /* background-attachment: fixed; */
+  z-index: -1;
+  bottom: 0px;
+}
+
+.App {
+  background: #000000e8;
+}

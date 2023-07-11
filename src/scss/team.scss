@@ -1,0 +1,117 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+#team {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: #f2f2f2;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 90px 20px 90px;
+    width: 100%;
+    margin: auto;
+
+    .heading {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+
+      h1 {
+        font-family: "raboto";
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: none;
+        color: #000000;
+        text-align: start;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-family: "raboto";
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: none;
+        color: #000000;
+        text-align: center;
+        margin: auto;
+        text-transform: uppercase;
+      }
+    }
+
+    .content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 1rem;
+
+      @include lg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      @include md {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+        max-width: 65%;
+      }
+
+      .team-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 800px;
+        height: 100%;
+        width: 100%;
+
+        max-width: 500px;
+        background-color: white;
+        gap: 30px;
+        padding: 20px;
+
+        .detial {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          h4 {
+            font-size: 14px;
+            color: black;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-family: "raboto";
+            text-align: center;
+          }
+
+          span {
+            color: rgb(20, 20, 20);
+            font-weight: 400;
+            font-family: "roboto-light";
+
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/* @import "./media.scss"; */
+
+.bac-main {
+  position: relative;
+}
+
+main::after{
+  
+}

@@ -1,0 +1,394 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  transition: 0.3s all;
+  background-color: black;
+
+  .outer {
+    position: relative;
+
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 20px;
+
+      .nav__grid {
+        display: grid;
+
+        grid-template-columns: 2fr 3fr 0.5fr;
+        position: relative;
+        align-items: center;
+
+        @include flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        @include mobile {
+          align-self: center;
+          justify-content: center;
+          row-gap: 20px;
+        }
+
+        .logo {
+          justify-self: start;
+          display: flex;
+          width: 100%;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            span {
+              color: #FFFFFF;
+              display: flex;
+              align-items: center;
+              gap: 2px;
+              height: 100%;
+              font-size: 25px;
+              font-family: 'open';
+
+
+              b {
+                color: #00EC46;
+              font-family: 'font-2';
+              font-size: 25px;
+
+
+              }
+            }
+          }
+
+          img {
+            width: 100%;
+            max-width: 65px;
+          }
+        }
+
+        nav {
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            list-style: none;
+            gap: 30px;
+            margin-right: 20px;
+            @include md {
+              margin-right:0px ;
+            }
+            >li {
+              margin: 0.5rem 0px !important;
+              display: flex;
+              position: relative;
+              transition: 0.3s all;
+              font-size: 18px;
+              font-family: "open";
+
+              align-items: center;
+              justify-content: center;
+
+              @include md {
+                width: 100%;
+              }
+
+              >a {
+                transition: 0.3s all;
+                text-transform: capitalize;
+                font-family: "open";
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 300;
+
+              }
+            }
+
+            .mobile-btn {
+              display: none;
+
+              a {
+                background-color: red;
+                font-family: "raboto";
+                box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+                font-size: 15px;
+                font-weight: 400;
+                width: 130px;
+                color: #ffffff;
+                border: 0px;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 50px;
+                background: #FF0000;
+                border: 1px solid #FFFFFF;
+                justify-content: center;
+                display: flex;
+                justify-content: center;
+              }
+
+              @include md {
+                display: flex;
+                justify-content: center;
+              }
+            }
+          }
+        }
+
+        .nav__btns {
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+          justify-content: end;
+          font-family: "Zen Dots", cursive;
+
+          @include mobile {
+            justify-content: space-between;
+            gap: 0px;
+            width: 100%;
+          }
+
+          .btn {
+            background-color: red;
+            font-family: "raboto";
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            font-weight: 400;
+            width: 130px;
+            color: #ffffff;
+            border: 0px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50px;
+            background: #FF0000;
+            border: 1px solid #FFFFFF;
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+
+            @include md {
+
+              display: none;
+            }
+
+            span {
+              transition: inherit;
+
+              font-weight: 700;
+              letter-spacing: 0.2em;
+              font-style: normal;
+              display: initial;
+              font-size: 21px;
+              font-family: "font-2";
+
+            }
+          }
+
+          .active {
+            background-color: #ffb32c !important;
+            color: black !important;
+          }
+
+          i {
+            padding: 3px 3px !important;
+          }
+
+          .logo-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: white;
+            color: white;
+
+            @include xtablet7 {
+              gap: 0.6rem;
+            }
+
+            .icon {
+              border-radius: 50%;
+              transition: all 0.3s ease-in-out;
+
+              a {
+                align-items: center;
+                background: #222;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                display: flex;
+                font-size: 27px;
+                justify-content: center;
+                padding: 5px;
+                transition: all 0.5s ease-in-out;
+
+                svg {
+                  padding: 1px;
+
+                  @include xtablet7 {
+                    padding: 2px;
+                  }
+
+                  @include xtablet13 {
+                    padding: 3px;
+                  }
+                }
+              }
+            }
+
+            .bars {
+              img {
+              width: 50% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.auto_scroll {
+  position: fixed;
+  bottom: 5%;
+  right: 3.7%;
+  cursor: pointer;
+  transition: 0.3s all;
+  z-index: 1001;
+
+  transform: scale(0);
+
+  @include display {
+    right: 1.4%;
+  }
+
+  @include coloum {
+    right: 1.7%;
+  }
+
+  >i {
+    width: 50px;
+    background: #FF0000 !important;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    svg {
+      font-size: 2.8rem;
+
+      @include md {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    .nav__grid {
+      .nav__btns {
+        >i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  header {
+    .nav__grid {
+      grid-template-columns: 1fr 1.5fr !important;
+
+
+
+      nav {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        overflow: hidden;
+        box-shadow: 0 0 5px black;
+        background: black;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 310px;
+        transition: all 0.5s ease-in-out;
+        left: 0px;
+        transform: translateX(-310px);
+        z-index: 1111;
+@include mobile {
+ 
+}
+        ul {
+          justify-content: start !important;
+          transition: 0.3s all ease-out;
+          flex-direction: column;
+
+          z-index: 1000;
+          align-items: flex-start !important;
+          padding: 22px 20px;
+          font-size: 1.4rem;
+
+
+          li {
+            margin-right: unset;
+            margin-bottom: 16px;
+          }
+        }
+
+        .ul__active {
+          margin-top: 0% !important;
+        }
+      }
+
+      .nav__btns {
+        >i {
+          width: 100%;
+          /* background: #ffb32c !important; */
+          height: 50px;
+          display: grid;
+          place-content: center;
+          border-radius: 5px;
+          pointer-events: auto;
+          display: flex;
+          justify-content: end;
+          filter: invert(1);
+          align-items: center;
+          color: #363434;
+          z-index: 11111;
+
+
+        }
+      }
+    }
+  }
+}
+
+.bac-color {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000a3;
+  position: fixed;
+  top: 0px;
+  z-index: 111;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
