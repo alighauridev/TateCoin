@@ -26,16 +26,20 @@
     align-items: center;
     text-align: center;
     place-items: center;
+    width: 100%;
 
     @include md {
       grid-template-columns: 1fr;
     }
+
     .video {
       width: 100%;
+
       video {
         width: 100%;
       }
     }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -78,16 +82,14 @@
           position: relative;
           margin: 0 auto 0px;
           font-weight: 700;
-          background-image: -webkit-linear-gradient(
-            top,
-            #efd100,
-            #e2a233 19%,
-            #f0c328 30%,
-            #fff1a3 43%,
-            #ffe13e 50%,
-            #fff 51%,
-            #fff
-          );
+          background-image: -webkit-linear-gradient(top,
+              #efd100,
+              #e2a233 19%,
+              #f0c328 30%,
+              #fff1a3 43%,
+              #ffe13e 50%,
+              #fff 51%,
+              #fff);
           background-size: 1em 2.5em;
           color: #f8b700;
           -webkit-background-clip: text;

@@ -42,7 +42,7 @@ const Banner = () => {
   return (
     <>
       <section id="banner">
-        <div className="container">
+        <div className="container__">
           <div className="video">
             <video src={videoUrl} ref={vidRef} muted autoPlay loop />
           </div>
