@@ -65,7 +65,10 @@ const About = () => {
               </div>
             </div>
             <div className="content-address">
-              <h3>$TATE Smart contract address :</h3>
+              <h3 style={{
+                color: '#00ec45',
+                fontFamily: "\'light-font-2\'"
+              }}>$TATE Smart contract address :</h3>
               <div className="address">
                 <h4>0xa589d8868607b8d79eE4288ce192796051263b64</h4>
               </div>

@@ -71,7 +71,12 @@ body::before {
   z-index: -1;
   bottom: 0px;
 }
-
+.hide {
+  display: none;
+}
 .App {
   background: #000000e8;
+}
+.mute-btn svg {
+  transform: scale(1.5);
 }
