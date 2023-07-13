@@ -39,7 +39,10 @@ const Banner = () => {
   }, []);
 
   useEffect(() => {
-    vidRef.current.muted = muted;
+    if (vidRef.current) {
+      vidRef.current.muted = muted;
+      vidRef.current.play();
+    }
   }, [muted]);
 
   const handleToggleMute = () => {
@@ -51,32 +54,42 @@ const Banner = () => {
       <section id="banner">
         <div className="container__">
           <div className="video">
-            <video src={videoUrl} ref={vidRef} autoPlay loop />
-            <p style={{
-              fontSize: '24px',
-              color: 'white',
-              textAlign: 'center',
-              fontFamily: '"light-font-2"',
-              width: '100%',
-              fontWeight: '900',
-              lineHeight: '40px', display: 'flex',
-              justifyContent: 'center', marginTop: "50px",
-              alignItems: 'center'
-            }}>First of all, start the music :      <button className="mute-btn" style={{
-              width: '50px',
-              height: '50px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              borderRadius: '100px',
-              border: '0',
-              background: 'red',
-              cursor: 'pointer',
-              marginTop: '-10px'
-            }} onClick={handleToggleMute} >
+            <video src={videoUrl} ref={vidRef} autoPlay loop muted={muted} />
+            <p
+              style={{
+                fontSize: "24px",
+                color: "white",
+                textAlign: "center",
+                fontFamily: '"light-font-2"',
+                width: "100%",
+                fontWeight: "900",
+                lineHeight: "40px",
+                display: "flex",
+                justifyContent: "center",
+                marginTop: "50px",
+                alignItems: "center",
+              }}
+            >
+              First of all, start the music :
+              <button
+                className="mute-btn"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "100px",
+                  border: "0",
+                  background: "red",
+                  cursor: "pointer",
+                  marginTop: "-10px",
+                }}
+                onClick={handleToggleMute}
+              >
                 {muted ? <MdVolumeMute /> : <MdVolumeUp />}
-              </button></p>
-
+              </button>
+            </p>
           </div>
         </div>
       </section>
