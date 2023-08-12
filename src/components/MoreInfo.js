@@ -142,23 +142,24 @@ const MoreInfo = () => {
                       display: "flex",
                       alignItems: "start",
                       justifyContent: "center",
-                      rowGap: "10px"
+                      rowGap: "10px",
+                      teali: "center",
                     }}
                   >
-                    <span>333,000,000,000,000</span>
-                    Token supply
+                    <p style={{ textAlign: "center" }}> Token supply</p>
+                    <span>just 100,000,000</span>
                   </p>
                 </div>
                 <div className="box">
                   <p>
-                    <span>zero</span>taxes
+                    <span>1/1 </span>taxes
                   </p>
-                  <p>
+                  {/* <p>
                     <span>zero </span>bulLshit
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div className="box">
+              {/* <div className="box">
                 <p>
                   <span>87%</span>supply
                 </p>
@@ -168,7 +169,7 @@ const MoreInfo = () => {
                 <p>
                   <span>3%</span>airdrop
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@ const Navigation = () => {
                   <img src={logo1} alt="" />
                   <span>
                     <b> $</b>
-                    TATE
+                    TATEX
                   </span>
                 </a>
               </div>
@@ -62,7 +62,7 @@ const Navigation = () => {
                   <li className="mobile-btn">
                     <a
                       target="blank_"
-                      href="https://64a4aac909ba2a30a6b02891--dainty-lolly-9ed3ff.netlify.app/"
+                      href="https://app.uniswap.org/#/swap?outputCurrency=0xdd6df7c7b52d8154a45c4781967e1dcd61fac6ef"
                       className="btn"
                     >
                       Buy Now
@@ -73,7 +73,7 @@ const Navigation = () => {
               <div className="nav__btns">
                 <a
                   target="blank_"
-                  href="https://64a4aac909ba2a30a6b02891--dainty-lolly-9ed3ff.netlify.app/"
+                  href="https://app.uniswap.org/#/swap?outputCurrency=0xdd6df7c7b52d8154a45c4781967e1dcd61fac6ef"
                   className="btn"
                 >
                   Buy Now
@@ -87,7 +87,6 @@ const Navigation = () => {
                     style={{
                       width: "40px",
                       height: "auto",
-                      // filter: "invert(1)",
                       cursor: "pointer",
                       transitions: "all 0.5s ease-in-out",
                     }}
@@ -109,7 +108,7 @@ const Navigation = () => {
       </div>
       <div
         className="bac-color"
-        style={navToggler ? { display: "block" } : {display:"none"}}
+        style={navToggler ? { display: "block" } : { display: "none" }}
         onClick={() => {
           setNavToggler(false);
         }}

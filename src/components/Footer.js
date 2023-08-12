@@ -34,16 +34,16 @@ const Footer = () => {
           </div>
           <div className="bottom" >
             <p>
-              <span>Copyright ©2023 Tate Token</span>
-              <span>tatetokeneth@gmail.com</span>
+              <span>Copyright ©2023 TateX</span>
+              <a href="mailto:Support@TateX.vip">  <span>Support@TateX.vip</span></a>
             </p>
 
             <div className="icons">
-              <a href="#">
+              <a href="https://twitter.com/tateXeth">
                 <FaTwitter />
               </a>
 
-              <a href="#">
+              <a href="http://t.me/TateXEth">
                 <FaTelegramPlane />
               </a>
             </div>
