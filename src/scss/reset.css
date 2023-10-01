@@ -20,6 +20,18 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url("./font/Helvetica-Font/Helvetica.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Impact";
+  src: url("./font/Helvetica-Font/Helvetica-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 .spin > div > div {
   color: rgba(255, 39, 69, 1);
   margin-right: 3px;
@@ -28,11 +40,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik" !important;
+  font-family: "Helvetica" !important;
   text-decoration: none;
   color: #0f0f0f;
 }
-
 
 body::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -52,8 +63,8 @@ body::-webkit-scrollbar-thumb {
 }
 h1,
 h2 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 900;
+  font-family: "Impact", cursive;
+  font-weight: 100;
 }
 .heading p {
   font-size: 26px !important;
@@ -121,7 +132,6 @@ button.owl-next span {
   background: none;
   border: 1px solid black;
 }
-
 
 .owl-theme .owl-dots .owl-dot {
   width: 30px;

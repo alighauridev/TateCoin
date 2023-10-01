@@ -10,19 +10,18 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: "font-2";
+  font-family: "Impact";
   src: url("./font/mnicmp/mnicmp-Bold.otf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: "light-font-2";
   src: url("./font/mnicmp/mnicmp-Light.otf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: "open";
+  font-family: "helvetica";
   src: url("../scss/font/mnicmp/mnicmp.otf");
   font-style: normal;
   font-weight: normal;
@@ -45,23 +44,48 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "poppins";
+  src: url("./font/Poppins/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./font/Helvetica-Font/Helvetica.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Impact";
+  src: url("./font/Helvetica-Font/Helvetica-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Impact";
+  src: url("./font/Impact-Font/impact.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Rubik", system-ui;
+  font-family: "Helvetica", system-ui;
   text-decoration: none !important;
 }
 body {
   overflow-x: hidden;
   position: relative;
+  background: black;
 }
 body::before {
   content: "";
   position: absolute;
   /* top: 0px; */
-  background: url(../assests/bg/bac.webp);
+  /* background: url(../assests/bg/bac.webp); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -71,6 +95,7 @@ body::before {
   z-index: -1;
   bottom: 0px;
 }
+
 .hide {
   display: none;
 }
@@ -79,4 +104,9 @@ body::before {
 }
 .mute-btn svg {
   transform: scale(1.5);
+}
+h1,
+h2 {
+  font-family: "Impact", cursive;
+  font-weight: 100;
 }

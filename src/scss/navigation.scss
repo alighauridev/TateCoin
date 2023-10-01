@@ -55,11 +55,12 @@ header {
               gap: 2px;
               height: 100%;
               font-size: 25px;
-              font-family: "open";
+              font-family: "Impact";
+              font-weight: 500;
 
               b {
-                color: #00ec46;
-                font-family: "font-2";
+                color: #fb58fb;
+                font-family: "Impact";
                 font-size: 25px;
               }
             }
@@ -88,7 +89,7 @@ header {
               position: relative;
               transition: 0.3s all;
               font-size: 18px;
-              font-family: "open";
+              font-family: "helvetica";
 
               align-items: center;
               justify-content: center;
@@ -100,7 +101,7 @@ header {
               > a {
                 transition: 0.3s all;
                 text-transform: capitalize;
-                font-family: "open";
+                font-family: "helvetica";
                 color: #ffffff;
                 text-transform: uppercase;
                 font-size: 16px;
@@ -155,21 +156,24 @@ header {
             background-color: red;
             font-family: "raboto";
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-            font-size: 16px;
+            font-size: 26px;
             font-weight: 400;
-            width: 130px;
-            color: #ffffff;
+            color: black;
             border: 0px;
             cursor: pointer;
             padding: 10px 10px 5px 10px;
             border-radius: 50px;
-            background: #ff0000;
+            background: #fff;
             border: 1px solid #ffffff;
             justify-content: center;
             display: flex;
             justify-content: center;
-            font-family: "open";
+            font-family: Impact;
             margin: 0;
+            text-transform: uppercase;
+            padding: 10px 45px;
+            width: max-content;
+            letter-spacing: 5px;
             @include md {
               display: none;
             }
@@ -182,7 +186,7 @@ header {
               font-style: normal;
               display: initial;
               font-size: 21px;
-              font-family: "font-2";
+              font-family: "Impact";
             }
           }
 

@@ -24,30 +24,29 @@
       row-gap: 25px;
 
       h1 {
-        color: #00ec45;
-        font-size: clamp(10%, 11vw, 65px);
-        width: 100%;
+        font-size: clamp(10%, 15vw, 45px);
+        color: white;
         text-align: center;
-        font-family: "font-2";
-        letter-spacing: -2px;
-        word-spacing: -25px;
-        max-width: 815px;
-        margin: auto;
+        width: 100%;
+        font-weight: 100;
+        line-height: 40px;
+        letter-spacing: 2px;
+        word-spacing: 0;
       }
 
       p {
         font-size: 24px;
         color: white;
         text-align: center;
-        font-family: "light-font-2";
+
         width: 100%;
-        font-weight: 900;
+        font-weight: 100;
         line-height: 40px;
 
         span {
-          color: #00ec45;
-          font-family: "font-2";
-          font-weight: 900;
+          color: #fb58fb;
+          font-family: "Impact";
+          font-weight: 100;
           margin-right: 20px;
         }
       }
@@ -55,9 +54,12 @@
 
     .content {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 20px 20px;
       padding: 10px 0px;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
 
       @include lg {
         grid-template-columns: 1fr 1fr;
@@ -94,11 +96,11 @@
         font-size: clamp(10%, 15vw, 45px);
         color: white;
         text-align: center;
-        font-family: "light-font-2";
+
         width: 100%;
-        font-weight: 900;
+        font-weight: 100;
         line-height: 40px;
-        letter-spacing: -2px;
+        letter-spacing: 2px;
         word-spacing: -12px;
       }
 
@@ -140,17 +142,17 @@
             font-size: 24px;
             color: white;
             text-align: center;
-            font-family: "light-font-2";
+
             width: 100%;
-            font-weight: 900;
+            font-weight: 100;
             line-height: 24px;
             text-align: start;
 
             span {
               margin-right: 10px;
-              color: #00ec46;
+              color: #fb58fb;
               font-size: 24px;
-              font-family: "open";
+              font-family: "helvetica";
               width: 100%;
               text-align: center;
             }

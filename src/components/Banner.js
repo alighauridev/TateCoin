@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Parallax } from "react-parallax";
 import "../scss/banner.scss";
-import img1 from "../assests/bg/24783.jpg";
-import heading from "../assests/heading.webp";
-import logo from "../assests/logo.png";
+
 import { MdKeyboardArrowRight, MdVolumeMute, MdVolumeUp } from "react-icons/md";
 import ReactPlayer from "react-player";
 import videoUrl from "../assests/bg/file.mp4";
@@ -12,7 +10,7 @@ const Banner = () => {
   const vidRef = useRef();
   const imageRef = useRef(null);
   const [muted, setMuted] = useState(true);
-
+  const [displayModal, setDIsplayModal] = useState(true)
   useEffect(() => {
     const handleScroll = () => {
       if (imageRef.current) {
@@ -60,14 +58,14 @@ const Banner = () => {
                 fontSize: "24px",
                 color: "white",
                 textAlign: "center",
-                fontFamily: '"light-font-2"',
                 width: "100%",
-                fontWeight: "900",
+                fontWeight: "100",
                 lineHeight: "40px",
                 display: "flex",
                 justifyContent: "center",
                 marginTop: "50px",
                 alignItems: "center",
+                gap: "10px",
               }}
             >
               First of all, start the music :
@@ -81,7 +79,7 @@ const Banner = () => {
                   alignItems: "center",
                   borderRadius: "100px",
                   border: "0",
-                  background: "red",
+                  background: "#fb58fb",
                   cursor: "pointer",
                   marginTop: "-10px",
                 }}
@@ -93,6 +91,24 @@ const Banner = () => {
           </div>
         </div>
       </section>
+      {
+        displayModal && <div className="modal" id="myModal">
+          <div class="modal-content">
+            <p>Continue the website...</p>
+            <div>
+              <button id="agree-btn" onClick={() => {
+                setMuted(false)
+                setDIsplayModal(false)
+              }}>With Music</button>
+              <button id="agree-btn" onClick={() => {
+                setMuted(true)
+                setDIsplayModal(false)
+              }}>No Music</button>
+            </div>
+          </div>
+        </div>
+      }
+
     </>
   );
 };

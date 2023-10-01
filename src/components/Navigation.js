@@ -37,10 +37,10 @@ const Navigation = () => {
             <div className="nav__grid">
               <div className="logo">
                 <a href="#">
-                  <img src={logo1} alt="" />
+                  {/* <img src={logo1} alt="" /> */}
                   <span>
                     <b> $</b>
-                    TATEX
+                    WALLST
                   </span>
                 </a>
               </div>
@@ -62,10 +62,17 @@ const Navigation = () => {
                   <li className="mobile-btn">
                     <a
                       target="blank_"
-                      href="https://app.uniswap.org/#/swap?outputCurrency=0xdd6df7c7b52d8154a45c4781967e1dcd61fac6ef"
+                      href="#"
                       className="btn"
                     >
-                      Buy Now
+                      TELEGRAM
+                    </a>
+                    <a
+                      target="blank_"
+                      href="#"
+                      className="btn"
+                    >
+                      GET NOW
                     </a>
                   </li>
                 </ul>
@@ -73,10 +80,17 @@ const Navigation = () => {
               <div className="nav__btns">
                 <a
                   target="blank_"
-                  href="https://app.uniswap.org/#/swap?outputCurrency=0xdd6df7c7b52d8154a45c4781967e1dcd61fac6ef"
+                  href="#"
                   className="btn"
                 >
-                  Buy Now
+                  TELEGRAM
+                </a>
+                <a
+                  target="blank_"
+                  href="#"
+                  className="btn"
+                >
+                  GET NOW
                 </a>
                 <i onClick={() => barBtn()} className="bars">
                   <img

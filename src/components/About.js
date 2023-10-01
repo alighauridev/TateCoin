@@ -8,14 +8,10 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="heading">
-            <h1>Now escape the matrix</h1>
+            <h1>Unlock the Power of Wall Street</h1>
             <div className="para">
               <p>
-                We are an independent team,{" "}
-                <span>NOT Affiliated with the TATEXbrothers</span>
-                building a community of like-minded individuals who are ready to
-                break free from the modern prison and achieve financial
-                independence.
+                We are an independent team, dedicated to helping you navigate the complex world of finance and investments. Join our community of like-minded individuals who are ready to conquer Wall Street and achieve financial success.
               </p>
             </div>
           </div>
@@ -28,18 +24,24 @@ const About = () => {
                 <span>LP &nbsp;</span>
                 Locked
               </p>
+              <p>
+                <span></span>100<span>M</span>
+              </p>
+              <p>
+                Token Supply
+              </p>
             </div>
             <div className="img">
               <img src={about} alt="" />
             </div>
             <div className="box-right">
               <p>
-                <span>contract </span>
-                renounced
+                <span>Contract </span>
+                Renounced
               </p>
               <p>
                 <span>like a</span>
-                <b>G</b>
+                <b style={{ fontWeight: '100' }}>Pro</b>
               </p>
             </div>
           </div>
@@ -47,30 +49,28 @@ const About = () => {
             <div className="bottom-heading">
               <span>
                 <b> $</b>
-                TATEX
+                WALLST
               </span>
-              <p>the portal has opened</p>
+              <p>Your Gateway to Financial Freedom</p>
               <div className="btns">
-                <a href="http://netflix.com" style={{ background: "rgb(0, 36, 255)" }}>
-                  Stay poor
+                <a href="http://netflix.com" >
+                  Stay Informed
                 </a>
                 <a
                   href="https://app.uniswap.org/#/swap?outputCurrency=0xdd6df7c7b52d8154a45c4781967e1dcd61fac6ef"
-                  style={{
-                    background: "#FF0000",
-                  }}
+
                 >
-                  Buy now
+                  Invest Now
                 </a>
               </div>
             </div>
             <div className="content-address">
               <h3 style={{
-                color: '#00ec45',
+                color: '#fb58fb',
                 fontFamily: "\'light-font-2\'"
-              }}>$TATEXX Smart contract address :</h3>
+              }}>$WALLST Smart Contract Address:</h3>
               <div className="address">
-                <h4>0xdd6DF7C7B52D8154A45C4781967E1dCD61Fac6Ef</h4>
+                <h4>0x00000000000000000000000000000</h4>
               </div>
             </div>
           </div>

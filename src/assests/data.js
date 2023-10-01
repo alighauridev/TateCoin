@@ -4,23 +4,7 @@ import img3 from "../main.images/nfts/nft-3.png";
 import img4 from "../main.images/nfts/nft-4.png";
 import img5 from "../main.images/nfts/nft-5.png";
 export const nav = [
-  {
-    name: "Home",
-    path: "#home",
-  },
-  {
-    name: "Twitter",
-    path: "https://twitter.com/tateXeth",
-  },
-  {
-    name: "Telegram",
-    path: "http://t.me/TateXEth",
-  },
 
-  {
-    name: "Chart",
-    path: "https://www.dextools.io/app/en/ether/pair-explorer/0x88ebf55b8acc5e2af7c6d16d25942ed416a45f08",
-  },
 ];
 export const Nfts = [img1, img2, img4, img5, img4, img2];
 export const team = [
